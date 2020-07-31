@@ -1,0 +1,28 @@
+{
+  "name": "bge",
+  "version": "0.0.1",
+  "description": "Battleship Game Engine",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --silent --verbose --detectOpenHandles",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSchwert/bge.git"
+  },
+  "keywords": [
+    "Battleship"
+  ],
+  "author": "CodeSchwert@protonmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeSchwert/bge/issues"
+  },
+  "homepage": "https://github.com/CodeSchwert/bge#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.8",
+    "jest": "^26.2.2",
+    "nodemon": "^2.0.4"
+  }
+}
