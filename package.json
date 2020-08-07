@@ -4,9 +4,10 @@
   "description": "Battleship Game Engine",
   "main": "server.js",
   "scripts": {
-    "build": "babel -d dist engine",
-    "start": "yarn run build && node dist/server.js",
-    "start:watch": "yarn run build && nodemon --watch engine --exec yarn start",
+    "sync:static": "rsync src/server dist -r --exclude=app.js --exclude=README.md",
+    "build": "rimraf dist && babel src --out-dir dist && yarn run sync:static",
+    "start": "yarn run build && node dist/index.js",
+    "start:watch": "nodemon --watch src --exec yarn start",
     "test": "verbose --silent --verbose",
     "dev": "yarn run start:watch"
   },
