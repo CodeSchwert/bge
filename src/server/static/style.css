@@ -1,4 +1,30 @@
 body {
+  font-family: 'Fira Mono', monospace;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.console {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.console-log {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+}
+
+.message-form {
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  
 }

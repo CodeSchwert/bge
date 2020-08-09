@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Battleship</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="/static/style.css">
+
+  <title>battleships</title>
 </head>
 <body>
-  <h1>Battleship</h1>
+  <div>
+    <h1>Battleships</h1>
+  </div>
+  
+  <div class="console">
+
+    <!-- console.log -->
+    <div class="console-log">
+      Foo
+    </div>
+
+    <!-- message form -->
+    <div class="container-fluid message-form">
+      <form class="input-group input-group-lg">
+
+          <input type="text" class="form-control" />
+          <div class="input-group-append">
+            <button class="]btn btn-lg btn-outline-secondary" type="button">
+              Send
+            </button>
+          </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/socket.js"></script>
 </body>
 </html>

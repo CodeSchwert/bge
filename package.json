@@ -7,9 +7,8 @@
     "sync:static": "rsync src/server dist -r --exclude=app.js --exclude=README.md",
     "build": "rimraf dist && babel src --out-dir dist && yarn run sync:static",
     "start": "yarn run build && node dist/index.js",
-    "start:watch": "nodemon --watch src --exec yarn start",
-    "test": "verbose --silent --verbose",
-    "dev": "yarn run start:watch"
+    "dev": "yarn run build && nodemon --watch src --exec yarn start",
+    "test": "jest --silent --verbose"
   },
   "repository": {
     "type": "git",
@@ -29,6 +28,7 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@types/jest": "^26.0.8",
+    "@types/supertest": "^2.0.10",
     "jest": "^26.2.2",
     "nodemon": "^2.0.4"
   },
